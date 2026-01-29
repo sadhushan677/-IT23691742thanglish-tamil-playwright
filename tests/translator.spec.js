@@ -329,7 +329,7 @@ test('Neg_Fun_0006 – Random Symbols', async ({ page }) => {
   await page.goto('https://tamil.changathi.com/');
   const input = page.locator('textarea');
 
-  await input.type('@@@###$$$ ');
+  await input.type(',,,;;;() ');
   await page.waitForTimeout(1500);
 
   const value = await input.inputValue();
